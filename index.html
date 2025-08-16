@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:300,400,500,600,700&family=Inter:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Purrfect Care — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif; }
+    body { font-family: var(--font-sans); }
+    h1, h2, h3 { font-family: var(--font-serif); }
+  </style>
+</head>
+<body style="font-family: 'Playfair Display', sans-serif;" class="bg-white text-gray-800 leading-relaxed antialiased">
+  
+  <header class="w-full max-w-none bg-gradient-to-r from-amber-50 via-amber-100 to-rose-50 shadow-sm sticky top-0 z-40">
+    <div class="w-full max-w-none mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-full bg-amber-200 flex items-center justify-center text-amber-800 font-bold text-xl transform transition-transform duration-300 hover:scale-105">PC</div>
+        <div>
+          <div class="text-lg font-semibold">Purrfect Care</div>
+          <div class="text-sm text-gray-600">Cat care guides & tips</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-gray-700 hover:text-amber-700 transition">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-gray-700 hover:text-amber-700 transition">About</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-gray-700 hover:text-amber-700 transition">Contact</a>
+        <a href="#newsletter" class="ml-4 inline-block bg-amber-600 text-white px-4 py-2 rounded-lg hover:bg-amber-700 transition shadow">Subscribe</a>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="mobileMenuBtn" aria-label="Toggle menu" class="p-2 rounded-md bg-white shadow">
+          <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    
+    <div id="mobileMenu" class="hidden w-full bg-white border-t">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-gray-700">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-gray-700">About</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-gray-700">Contact</a>
+        <a href="#newsletter" class="text-gray-700">Subscribe</a>
+      </div>
+    </div>
+  </header>
+
+  
+  <main class="w-full max-w-none">
+    <section class="w-full max-w-none relative">
+      <div class="w-full h-64 md:h-96 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1603890099650-9c0b38e365dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxMHx8YSUyMGhhcHB5JTIwZG9tZXN0aWMlMjBsb25nLWhhaXJlZCUyMGNhdCUyMGxvdW5naW5nJTIwb24lMjBhJTIwc3VubGl0JTIwd2luZG93JTIwc2VhdCUyMHdpdGglMjBzb2Z0JTIwY3VzaGlvbnMlMkMlMjB3YXJtJTIwZ29sZGVuJTIwbGlnaHR8ZW58MHwwfHx8MTc1NTM0MDc0OHww&ixlib=rb-4.1.0&q=80&w=1080')" aria-hidden="true"></div>
+      <div class="-mt-24 md:-mt-40 px-6">
+        <div class="w-full bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row items-center gap-6 md:gap-12">
+          <div class="flex-1">
+            <h1 class="text-3xl md:text-4xl font-semibold text-amber-700">Purrfect Care</h1>
+            <p class="mt-2 text-gray-700 max-w-2xl">Essential guides, expert tips, and gentle reminders for keeping your cat healthy, happy, and curious. From nutrition to enrichment, find bite-sized and deeper guides tailored for every kind of cat guardian.</p>
+            <div class="mt-4 flex gap-3">
+              <a href="#guides" class="inline-block px-4 py-2 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition shadow">Browse Guides</a>
+              <a href="#tips" class="inline-block px-4 py-2 border border-amber-600 text-amber-600 rounded-lg hover:bg-amber-50 transition">Quick Tips</a>
+            </div>
+          </div>
+          <div class="w-full md:w-72 bg-amber-50 p-4 rounded-lg shadow-inner">
+            <h3 class="text-lg font-medium">Cat Care Quick Check</h3>
+            <ul class="mt-3 text-gray-700 space-y-2">
+              <li class="flex items-start gap-3"><span class="text-amber-600 font-semibold">•</span> Fresh water available</li>
+              <li class="flex items-start gap-3"><span class="text-amber-600 font-semibold">•</span> Litter box clean</li>
+              <li class="flex items-start gap-3"><span class="text-amber-600 font-semibold">•</span> Play & enrichment today?</li>
+            </ul>
+            <button id="checkBtn" class="mt-4 w-full bg-amber-700 text-white py-2 rounded hover:scale-102 transform transition">Run quick check</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="guides" class="w-full max-w-none px-6 py-12">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-semibold">Popular Guides</h2>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-amber-600 hover:underline">Learn more about our approach →</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article class="w-full bg-white border rounded-lg p-5 hover:shadow-lg transition-transform transform hover:-translate-y-1">
+          <img src="https://images.pexels.com/photos/27468397/pexels-photo-27468397.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Cat nutrition" class="w-full h-40 object-cover rounded-md">
+          <h3 class="mt-4 text-lg font-medium">Nutrition Basics</h3>
+          <p class="mt-2 text-gray-600">How to choose food, read labels, and build a feeding routine for kittens, adults, and seniors.</p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-amber-600 hover:underline">Read guide</a>
+            <button class="ml-auto text-sm bg-amber-100 px-3 py-1 rounded text-amber-700">Beginner</button>
+          </div>
+        </article>
+
+        <article class="w-full bg-white border rounded-lg p-5 hover:shadow-lg transition-transform transform hover:-translate-y-1">
+          <img src="https://images.unsplash.com/photo-1618484798645-86cbf5b31657?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwzfHxhJTIwcGxheWZ1bCUyMHRhYmJ5JTIwY2F0JTIwY2hhc2luZyUyMGElMjBmZWF0aGVyJTIwdG95JTIwb24lMjBhJTIwd29vZGVuJTIwZmxvb3J8ZW58MHwwfHx8MTc1NTM0MDc1M3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="Play and enrichment" class="w-full h-40 object-cover rounded-md">
+          <h3 class="mt-4 text-lg font-medium">Play & Enrichment</h3>
+          <p class="mt-2 text-gray-600">Toys, homemade games, and environment changes to keep your cat mentally and physically stimulated.</p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-amber-600 hover:underline">Read guide</a>
+            <button class="ml-auto text-sm bg-amber-100 px-3 py-1 rounded text-amber-700">All Ages</button>
+          </div>
+        </article>
+
+        <article class="w-full bg-white border rounded-lg p-5 hover:shadow-lg transition-transform transform hover:-translate-y-1">
+          <img src="https://pixabay.com/get/gd518e45121bf0df8226b12e9cee7f9f6db03fa7eff101ad6480850318028f84a903dad613fab5efcf601675f714b39cfa30e25be5c7c3717b0e0908b1c13f4a3_640.jpg" alt="Vet care" class="w-full h-40 object-cover rounded-md">
+          <h3 class="mt-4 text-lg font-medium">Preventive Healthcare</h3>
+          <p class="mt-2 text-gray-600">Vaccines, parasite prevention, dental care, and when to see your veterinarian.</p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-amber-600 hover:underline">Read guide</a>
+            <button class="ml-auto text-sm bg-amber-100 px-3 py-1 rounded text-amber-700">Essential</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    
+    <section id="tips" class="w-full max-w-none px-6 py-12 bg-amber-50">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-semibold">Quick Tips</h2>
+        <div class="flex items-center gap-3">
+          <button data-filter="all" class="tip-filter px-3 py-1 rounded bg-white shadow text-sm">All</button>
+          <button data-filter="health" class="tip-filter px-3 py-1 rounded bg-white shadow text-sm">Health</button>
+          <button data-filter="home" class="tip-filter px-3 py-1 rounded bg-white shadow text-sm">Home</button>
+        </div>
+      </div>
+
+      <div id="tipsGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="tip-card bg-white p-5 rounded-lg shadow" data-type="health">
+          <h4 class="font-medium">Keep teeth healthy</h4>
+          <p class="mt-2 text-gray-600">Introduce tooth brushing gradually with finger brushes and tasty toothpaste made for cats.</p>
+        </div>
+
+        <div class="tip-card bg-white p-5 rounded-lg shadow" data-type="home">
+          <h4 class="font-medium">Create vertical space</h4>
+          <p class="mt-2 text-gray-600">Shelves and tall cat trees help cats feel secure and enriched indoors.</p>
+        </div>
+
+        <div class="tip-card bg-white p-5 rounded-lg shadow" data-type="health">
+          <h4 class="font-medium">Watch litter box habits</h4>
+          <p class="mt-2 text-gray-600">Changes in frequency or posture can signal medical concerns—don't ignore them.</p>
+        </div>
+
+        <div class="tip-card bg-white p-5 rounded-lg shadow" data-type="home">
+          <h4 class="font-medium">Rotate toys</h4>
+          <p class="mt-2 text-gray-600">Keep playtime interesting by rotating a few toys weekly to rekindle curiosity.</p>
+        </div>
+
+        <div class="tip-card bg-white p-5 rounded-lg shadow" data-type="health">
+          <h4 class="font-medium">Hydration is key</h4>
+          <p class="mt-2 text-gray-600">Some cats prefer flowing water—consider a cat fountain to encourage drinking.</p>
+        </div>
+
+        <div class="tip-card bg-white p-5 rounded-lg shadow" data-type="home">
+          <h4 class="font-medium">Safe window views</h4>
+          <p class="mt-2 text-gray-600">Secure screens and provide cozy perches so cats can safely enjoy outside sights.</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="w-full max-w-none px-6 py-12">
+      <h2 class="text-2xl font-semibold mb-6">Frequently Asked Questions</h2>
+      <div class="space-y-3">
+        <div class="faq-item bg-white border rounded-lg overflow-hidden">
+          <button class="faq-toggle w-full text-left px-5 py-4 flex items-center justify-between">
+            <span class="font-medium">How often should I take my cat to the vet?</span>
+            <svg class="h-5 w-5 text-amber-600 transform transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"/></svg>
+          </button>
+          <div class="faq-content px-5 py-0 max-h-0 overflow-hidden text-gray-600 transition-all duration-300">Adult cats typically need a checkup at least once a year; kittens and seniors often need more frequent visits. Discuss a schedule with your veterinarian based on your cat's health.</div>
+        </div>
+
+        <div class="faq-item bg-white border rounded-lg overflow-hidden">
+          <button class="faq-toggle w-full text-left px-5 py-4 flex items-center justify-between">
+            <span class="font-medium">What food is best for my kitten?</span>
+            <svg class="h-5 w-5 text-amber-600 transform transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"/></svg>
+          </button>
+          <div class="faq-content px-5 py-0 max-h-0 overflow-hidden text-gray-600 transition-all duration-300">Kittens need a diet formulated for growth—look for products labeled for kittens or all life stages and check with your vet for portioning guidance.</div>
+        </div>
+
+        <div class="faq-item bg-white border rounded-lg overflow-hidden">
+          <button class="faq-toggle w-full text-left px-5 py-4 flex items-center justify-between">
+            <span class="font-medium">How do I introduce a new cat to my home?</span>
+            <svg class="h-5 w-5 text-amber-600 transform transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"/></svg>
+          </button>
+          <div class="faq-content px-5 py-0 max-h-0 overflow-hidden text-gray-600 transition-all duration-300">Introduce gradually using scent swapping, separate safe rooms, and supervised visits. Give it time—some cats take weeks to accept new companions.</div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="newsletter" class="w-full max-w-none px-6 py-12 bg-gradient-to-r from-amber-50 to-white">
+      <div class="w-full bg-white rounded-xl shadow p-6 md:p-10 flex flex-col md:flex-row items-center gap-6">
+        <div class="flex-1">
+          <h3 class="text-xl font-semibold">Stay in the loop</h3>
+          <p class="mt-2 text-gray-600">Subscribe for weekly tips, seasonal care checklists, and exclusive content for cat guardians.</p>
+        </div>
+        <form id="subscribeForm" class="w-full md:w-auto flex gap-3">
+          <input id="subEmail" type="email" placeholder="Your email" required class="px-4 py-2 border rounded-lg w-full md:w-72 focus:outline-none focus:ring-2 focus:ring-amber-200" />
+          <button type="submit" class="bg-amber-600 text-white px-4 py-2 rounded-lg hover:bg-amber-700 transition">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="w-full max-w-none bg-gray-50 border-t mt-12 px-6 py-8">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+      <div>
+        <div class="text-lg font-semibold">Purrfect Care</div>
+        <div class="text-sm text-gray-600">Compassionate guidance for every cat and guardian.</div>
+        <div class="mt-3 text-sm text-gray-600">© 2025 Purrfect Care</div>
+      </div>
+      <div class="flex gap-4">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-gray-700 hover:underline">About</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-gray-700 hover:underline">Contact</a>
+        <a href="#" class="text-gray-700 hover:underline">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
